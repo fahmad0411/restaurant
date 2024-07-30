@@ -1,0 +1,404 @@
+h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 40px;
+    font-family: "Berkshire Swash", serif;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: #000000;
+}
+h3 {
+    font-size: 28px;
+    line-height: 30px;
+    margin-bottom: 22px;
+    font-weight: 600;
+    color: #000000;
+}
+#header {
+    padding: 15px 0;
+}
+.header-custom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+div#logo a {
+    display: block;
+    max-width: 132px;
+    width: 100%;
+}
+.header-right nav ul {
+    display: flex;
+    align-items: center;
+}
+.header-right nav ul li {
+    margin-right: 15px;
+}
+.header-right nav ul li:last-child{
+    margin: 0;
+}
+.banner{
+    height: calc(100vh - 72px);
+    min-height: 700px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-image: url("https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2020/01/fresco-pizza-top.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.banner:before{
+    content: '';
+    background: rgba(0,0,0,0.4);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.banner .container{
+    position: relative;
+}
+.cutlery-img {
+    opacity: 0.65;
+    width: 57px;
+}
+.frill-design-img{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-content{
+    text-align: center;
+}
+.banner-content h1 {
+    font-size: 160px;
+    color: #ffffff;
+    font-family: "Berkshire Swash", serif;
+    margin-bottom: 50px;
+}
+.banner-content h3 {
+    font-size: 28px;
+    color: rgb(255, 119, 15);
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.banner-feature {
+    color: rgba(255, 255, 255, .84);
+    font-size: 28px;
+    font-weight: 600;
+    position: relative;
+    line-height: 36px;
+}
+.banner-feature:before {
+    content: '';
+    background: rgba(255, 255, 255, .84);
+    width: 28%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+.banner-feature:after {
+    content: '';
+    background: rgba(255, 255, 255, .84);
+    width: 28%;
+    height: 1px;
+    position: absolute;
+    right: 0;
+    left: auto;
+    top: 50%;
+}
+.welcome-section {
+    background-color: transparent;
+    padding: 100px 0 200px;
+    background-image: url("../images/welcome-bg.jpg");
+    background-position: center;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.welcome-section:before{
+    content: '';
+    background: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 0.7;
+}
+.welcome-section .container {
+    position: relative;
+}
+.welcome-img1{
+    background-image: url("https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2019/12/Pizza-slice.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    min-height: 425px;
+}
+.welcome-img2{
+    background-image: url("https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2019/12/food-table-meet.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    min-height: 425px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 40px;
+    position: relative;
+}
+.welcome-img2:after {
+    content: '';
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.welcome-content p {
+    margin-bottom: 40px;
+}
+.custom-btn {
+    padding: 15px 40px;
+    background: rgb(255, 119, 15);
+    color: #ffffff;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    transition: all .3s ease-in;
+    display: inline-block;
+}
+.custom-btn:hover{
+    transform: translateY(8px);
+    color: #FFFFFF;
+    transition: all .3s ease-in;
+}
+.open-hours {
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+}
+.open-hours h4 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: "Berkshire Swash", serif;
+}
+.open-hours p {
+    margin: 0 0 5px;
+    color: #FFFFFF;
+}
+.open-hours p:last-child{
+    margin: 0;
+}
+.our-menu-wrap {
+    margin-top: 120px;
+    text-align: center;
+}
+.our-menu-wrap .menuImg {
+    display: block;
+    margin-bottom: 22px;
+}
+.menu-section{
+    background-image: url("https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2020/01/dine-out.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.menu-section:before{
+    content: '';
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.menu-section .container{
+    position: relative;
+    top: -130px;
+}
+.menu-section .row .col {
+    padding: 0;
+}
+.dish-info {
+    background: #FFFFFF;
+    border: 1px solid rgb(255, 119, 15);
+    padding: 15px 60px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.dish-price{
+    display: block;
+    width: 100%;
+    font-size: 28px;
+    font-weight: 600;
+    padding: 30px 0 30px;
+    margin-top: 40px;
+    position: relative;
+}
+.dish-price:before {
+    content: '';
+    background: #000000;
+    width: 90px;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.dish-price:after{
+    content: '';
+    background: #000000;
+    width: 90px;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.more-btn{
+    text-align: center;
+    margin-top: 50px;
+}
+.inside-section{
+    padding: 50px 0 50px;
+    text-align: center;
+}
+.insideWrap h5 {
+    font-size: 20px;
+    font-family: "Berkshire Swash", serif;
+    margin: 20px 0 20px;
+    font-weight: 500;
+}
+.insideWrap p{
+    margin-bottom: 0;
+}
+.about-banner{
+    background-image: url("https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2019/12/About-us-banner.jpg");
+}
+.about-banner:before{
+    content: '';
+    background: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+.about-banner .container{
+    position: relative;
+}
+.sub-page-banner{
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 400px;
+}
+.sub-page-banner h1 {
+    color: #FFFFFF;
+    font-size: 64px;
+    line-height: 65px;
+    margin-bottom: 22px;
+    font-family: "Berkshire Swash", serif;
+    letter-spacing: 1px;
+}
+.sub-page-banner .frill-design-img{
+    text-align: left;
+}
+.collection-section{
+    padding: 50px 0 50px;
+}
+.collection-images {
+    display: flex;
+    flex-wrap: wrap;
+}
+.collection-images span {
+    display: block;
+    max-width: calc(50% - 10px);
+    margin: 0 10px 10px 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.collection-images span:nth-child(2){
+    margin-right: 0;
+}
+.collection-images span:nth-child(3){
+    margin-bottom: 0;
+}
+.collection-images span:last-child{
+    margin:0;
+}
+.amenities-section {
+    background: rgb(255, 119, 15, 0.1);
+    padding: 50px 0;
+}
+.amenities-section .frill-design-img {
+    text-align: left;
+}
+.amenities-section h2 {
+    margin-bottom: 30px;
+}
+.amenity {
+    font-size: 22px;
+    font-family: "Berkshire Swash", serif;
+    display: flex;
+    align-items: center;
+    line-height: 26px;
+}
+.amenity span {
+    margin-left: 8px;
+}
+.amenity svg {
+    fill: rgb(255, 119, 15);
+}
+.contact-banner{
+    background-image: url("https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2020/01/dine-out.jpg");
+}
+
+
+#footer{
+    background-image: url("https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2021/01/Prepare-dish-image.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    text-align: center;
+}
+.footer-content h2{
+    color: #FFFFFF;
+}
+.footer-content {
+    color: #ffffff;
+}
+.res-numb{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 60px;
+    font-family: "Berkshire Swash", serif;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+.copyright-text {
+    margin: 0;
+    color: #ffffff;
+}

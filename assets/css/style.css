@@ -374,6 +374,33 @@ div#logo a {
 .contact-banner{
     background-image: url("https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2020/01/dine-out.jpg");
 }
+.map-section {
+    padding: 50px 0;
+}
+.map-wrapper iframe {
+    width: 100%;
+}
+.address-section {
+    background: rgb(255, 119, 15, 0.1);
+    padding: 50px 0;
+}
+.reviews {
+    margin-top: 40px;
+}
+.reviews ul {
+    display: flex;
+    align-items: center;
+}
+.reviews ul li{
+    margin-right: 20px;
+}
+.reviews ul li a svg{
+    fill: rgb(255, 119, 15);
+}
+.reviews ul li:last-child{
+    margin-right: 0;
+}
+
 
 
 #footer{

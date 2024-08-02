@@ -199,6 +199,10 @@ div#logo a {
 .open-hours p:last-child{
     margin: 0;
 }
+span.menuImg {
+    display: block;
+    margin-bottom: 20px;
+}
 .our-menu-wrap {
     margin-top: 120px;
     text-align: center;
@@ -271,6 +275,9 @@ div#logo a {
     left: 0;
     right: 0;
     margin: 0 auto;
+}
+.dish-img img {
+    width: 100%;
 }
 .more-btn{
     text-align: center;
@@ -429,7 +436,7 @@ div#logo a {
     margin-bottom: 0;
 }
 .menu-detail-desc{
-    width: 60%;
+    width: 70%;
 }
 .menu-detail-desc h4 {
     font-size: 28px;
@@ -444,7 +451,7 @@ div#logo a {
     font-size: 28px;
     line-height: 34px;
     font-weight: 600;
-    width: 40%;
+    width: 30%;
     text-align: right;
 }
 .menu-details .row {
@@ -456,8 +463,6 @@ div#logo a {
 .more-menu {
     text-align: center;
 }
-
-
 
 #footer{
     background-image: url("https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2021/01/Prepare-dish-image.jpg");
@@ -484,4 +489,78 @@ div#logo a {
 .copyright-text {
     margin: 0;
     color: #ffffff;
+}
+
+/* responsiveness */
+@media (max-width: 1199px){
+    h3 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .dish-price {
+        margin-top: 20px;
+    }
+    .our-menu-wrap {
+        margin-top: 90px;
+    }
+}
+
+@media (max-width: 1023px){
+    h2 {
+        font-size: 32px;
+        line-height: 36px;
+        margin-bottom: 30px;
+    }
+    section.banner {
+        height: auto;
+        min-height: 500px;
+    }
+    .banner-content h1 {
+        font-size: 100px;
+        margin-bottom: 30px;
+    }
+    .banner-feature:before,
+    .banner-feature:after{
+        display: none;
+    }
+    .welcome-section{
+        padding: 50px 0 100px;
+    }
+    .welcome-content {
+        margin: 0 0 20px;
+    }
+    .welcome-img1{
+        margin-bottom: 30px;
+    }
+    .menu-section .container {
+        top: -70px;
+    }
+    #footer {
+       padding: 50px 0;
+    }
+    .amenity{
+        font-size: 18px;
+    }
+    .frill-design-img{
+        margin-bottom: 30px;
+    }
+    .menu-detail-desc h4{
+        font-size: 24px;
+    }
+    .map-wrapper {
+        margin-bottom: 30px;
+    }
+    .sub-page-banner h1{
+        margin-bottom: 50px;
+    }
+    .sub-page-banner {
+        height: 350px;
+    }
+    .sub-page-banner .frill-design-img {
+        max-width: 180px;
+    }
+    .sub-page-banner h1 {
+        margin-bottom: 20px;
+        font-size: 50px;
+    }
 }

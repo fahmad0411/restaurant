@@ -24,7 +24,7 @@ h3 {
 }
 div#logo a {
     display: block;
-    max-width: 132px;
+    max-width: 65px;
     width: 100%;
 }
 .header-right nav ul {
@@ -428,6 +428,8 @@ span.menuImg {
     border-radius: 40px;
     overflow: hidden;
     transition: all .3s ease-in;
+    height: 100%;
+    max-height: 450px; 
 }
 .menu-detail-img:hover{
     transform: translateY(8px);
@@ -582,6 +584,19 @@ span.menuImg {
 @media (max-width: 767px) {
     .mobile-btn{
         display: block;
+    }
+    .amenity span {
+        font-size: 16px;
+    }
+    .menu-detail-img {
+        max-height: 200px;
+    }
+    .address-section h3 {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    div#logo a {
+        max-width: 50px;
     }
     .toggle-btn span:first-child {
         -webkit-transform: rotate(-45deg) translate(-9px, 6px);

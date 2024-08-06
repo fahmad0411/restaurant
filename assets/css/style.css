@@ -103,26 +103,45 @@ div#logo a {
     font-size: 28px;
     font-weight: 600;
     position: relative;
-    line-height: 36px;
+    line-height: 28px;
+}
+.banner-feature span {
+    display: inline-block;
+    position: relative;
+}
+.banner-feature span:first-child {
+    padding-right: 12px;
+    margin-right: 5px;
+}
+.banner-feature span:first-child::after{
+    content: '';
+    background: rgba(255, 255, 255, .84);
+    height: 100%;
+    width: 1px;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 .banner-feature:before {
     content: '';
     background: rgba(255, 255, 255, .84);
-    width: 28%;
+    width: 150px;
     height: 1px;
     position: absolute;
     left: 0;
     top: 50%;
+    display: none;
 }
 .banner-feature:after {
     content: '';
     background: rgba(255, 255, 255, .84);
-    width: 28%;
+    width: 150px;
     height: 1px;
     position: absolute;
     right: 0;
     left: auto;
     top: 50%;
+    display: none; 
 }
 .welcome-section {
     background-color: transparent;
@@ -182,7 +201,7 @@ div#logo a {
 }
 .custom-btn {
     padding: 15px 40px;
-    background: rgb(255, 119, 15);
+    background: #ed1c24;
     color: #ffffff;
     border-radius: 30px;
     font-size: 16px;
@@ -390,10 +409,16 @@ span.menuImg {
     margin-left: 8px;
 }
 .amenity svg {
-    fill: rgb(255, 119, 15);
+    fill: #ed1c24;
 }
 .contact-banner{
     background-image: url("https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2020/01/dine-out.jpg");
+}
+.book-table .amenity {
+    margin-bottom: 15px;
+}
+.book-table .amenity:last-child{
+    margin-bottom: 0;
 }
 .map-section {
     padding: 50px 0;
@@ -416,7 +441,7 @@ span.menuImg {
     margin-right: 20px;
 }
 .reviews ul li a svg{
-    fill: rgb(255, 119, 15);
+    fill: #ed1c24;
 }
 .reviews ul li:last-child{
     margin-right: 0;
@@ -479,6 +504,10 @@ span.menuImg {
 .more-menu {
     text-align: center;
 }
+.map-wrapper {
+    border: 1px solid #ed1c24;
+    padding: 5px;
+}
 
 #footer{
     background-image: url("https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2021/01/Prepare-dish-image.jpg");
@@ -538,6 +567,10 @@ span.menuImg {
     .banner-feature:before,
     .banner-feature:after{
         display: none;
+    }
+    .banner-feature {
+        font-size: 25px;
+        line-height: 25px;
     }
     .welcome-section{
         padding: 50px 0 100px;
@@ -645,6 +678,16 @@ span.menuImg {
         font-size: 22px;
         line-height: 26px;
     }
+    .banner-feature span{
+        display: block;
+    }
+    .banner-feature span:first-child {
+        padding-right: 0;
+        margin-right: 0;
+    }
+    .banner-feature span:first-child::after{
+        display: none;
+    }
     .frill-design-img {
         max-width: 200px;
         margin: 0 auto 20px;
@@ -670,6 +713,9 @@ span.menuImg {
     }
     .sub-page-banner .frill-design-img {
         margin: 0;
+    }
+    .menu-section .row .col {
+        padding: 0 12px 0 12px;
     }
     .collection-section,
     .amenities-section,

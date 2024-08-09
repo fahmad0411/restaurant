@@ -1,7 +1,7 @@
 h2 {
     font-size: 40px;
     line-height: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     font-family: "Berkshire Swash", serif;
     letter-spacing: 1px;
     font-weight: 400;
@@ -175,7 +175,7 @@ div#logo a {
     min-height: 425px;
 }
 .welcome-img2{
-    background-image: url("../images/hour-img.webp");
+    background-image: url("../images/about-img2.jpeg");
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -332,6 +332,51 @@ span.menuImg {
 .insideWrap p{
     margin-bottom: 0;
 }
+.food-slider-section {
+    padding: 50px 0;
+    background: rgb(255, 119, 15, 0.1);
+}
+.food-slider-section h2{
+    text-align: center;
+}
+.slick-initialized .slick-slide{
+    background-color: #b32532;
+    color: #FFF;
+    height: 200px;
+    margin: 0 15px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sliderImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button.slick-next,
+button.slick-prev{
+    position: absolute;
+    top: 50%;
+    font-size: 0;
+}
+button.slick-next{
+    right: -29px;
+}
+button.slick-prev{
+    left: -45px;
+}
+button.slick-next:before,
+button.slick-prev:before{
+    font-family: bootstrap-icons !important;
+    font-size: 30px;
+    color: #ed1c24;
+}
+button.slick-next:before{
+    content: "\f133";
+}
+button.slick-prev:before{
+    content: "\f129";
+}
 .about-banner{
     background-image: url("../images/about-us-banner.jpg");
 }
@@ -378,9 +423,13 @@ span.menuImg {
 .collection-images span {
     display: block;
     max-width: calc(50% - 10px);
-    margin: 0 10px 10px 0;
+    margin: 0 10px 0 0;
     border-radius: 10px;
     overflow: hidden;
+}
+.collection-images span img {
+    width: 100%;
+    height: 100%;
 }
 .collection-images span:nth-child(2){
     margin-right: 0;
@@ -630,6 +679,12 @@ span.menuImg {
         margin-bottom: 20px;
         font-size: 50px;
     }
+    button.slick-next,
+    button.slick-prev,
+    button.slick-next:before,
+    button.slick-prev:before{
+        display: none !important;
+    }
 }
 
 @media (max-width: 767px) {
@@ -735,6 +790,7 @@ span.menuImg {
     .menu-section .row .col {
         padding: 0 12px 0 12px;
     }
+    .food-slider-section,
     .collection-section,
     .amenities-section,
     .menu-details,
@@ -781,5 +837,15 @@ span.menuImg {
     }
     .dish-img {
         max-height: 300px;
+    }
+    .slick-initialized .slick-slide{
+        margin: 0;
+    }
+    .collection-images span{
+        margin: 0 0 10px 0;
+        max-width: 100%;
+    }
+    .book-table .amenity {
+        margin-bottom: 15px;
     }
 }
